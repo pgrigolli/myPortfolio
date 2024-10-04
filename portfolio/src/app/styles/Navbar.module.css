@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo à direita */
+  background-color: #333; /* Cor de fundo do menu */
+  padding: 10px 20px; /* Espaçamento interno */
+  position: fixed; /* Fixa o menu no topo */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Mantém o menu acima de outros elementos */
+}
+
+.navLinks {
+  list-style: none; /* Remove os bullets */
+  display: flex; /* Exibe os itens em linha */
+  gap: 15px; /* Espaçamento entre os links */
+}
+
+.navLinks li {
+}
+
+.navLinks a {
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  font-size: 18px; /* Tamanho da fonte */
+}
+
+.navLinks a:hover {
+  color: #ffdd57; /* Muda a cor ao passar o mouse */
+}

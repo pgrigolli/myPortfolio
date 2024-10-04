@@ -1,0 +1,7 @@
+/* Home.module.css */
+.container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+}
