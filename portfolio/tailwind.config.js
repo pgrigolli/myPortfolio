@@ -13,6 +13,9 @@ module.exports = {
         customBlue: "#005072",
         mainBlue: "#0090ff",
       },
+      scrollBehavior: {
+        smooth: 'smooth', // Adiciona a configuração para scroll-smooth
+      },
     },
   },
   plugins: [],
