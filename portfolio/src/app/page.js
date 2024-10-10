@@ -62,9 +62,29 @@ export default function Home() {
             />
           </div>
         </div>
-        <div id="about-me" className="pt-16 p-4 min-h-screen bg-gray-800 text-white">
-          <h2 className="text-2xl font-bold mb-4">Sobre mim</h2>
-          <p>Conteúdo sobre mim...</p>
+        <div id="about-me" className="pt-16 p-4 min-h-screen text-white">
+
+          <div className="grid grid-cols-2 gap-4 p-4 h-full">
+            <div className="flex justify-items items-center">
+              <div>
+                <h2 className="text-4xl pb-5">Sobre mim</h2>
+                <p className="text-lg">
+                  Graduado no Colégio Marista de Maringá, comecei meus estudos em Ciência da Computação na UTFPR-Campo Mourão. 
+                  Hoje no quarto período, me concentro no estudo de backend, não me limitando à tecnologias. 
+                </p>
+                <p className="pt-10 text-lg">
+                  Atualmente, estou na posição de Trainee na Haken Empresa Junior de Computação, na área de Projetos.
+                </p>
+              </div>
+
+            </div>
+            <div className="flex justify-items items-center">
+              <div>c</div>
+              <div>d</div>
+            </div>
+
+          </div>
+
         </div>
         <div id="my-projects" className="pt-16 p-4 min-h-screen bg-gray-800 text-white">
           <h2 className="text-2xl font-bold mb-4">Meus Projetos</h2>
