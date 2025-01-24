@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { FaInstagram, FaLinkedin, FaEnvelope, FaReact, FaNodeJs, FaGithub, FaJava, FaGit } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 
