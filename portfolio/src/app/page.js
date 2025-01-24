@@ -5,6 +5,7 @@ import { FaInstagram, FaLinkedin, FaEnvelope, FaReact, FaNodeJs, FaGithub, FaJav
 import { SiTailwindcss } from 'react-icons/si';
 import { useState } from "react";
 import Link from "next/link";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   const [copied, setCopied] = useState(false);
@@ -24,13 +25,8 @@ export default function Home() {
   return (
     <>
       <div> 
-        <nav className="flex justify-start bg-mainBlue p-4 fixed top-0 w-full pl-10">
-          <ul className="flex space-x-10">
-            <li><Link href="/" className="text-white">Home</Link></li>
-            <li><Link href="#about-me" className="text-white">Sobre mim</Link></li> {/* Navegação suave para a seção */}
-            <li><Link href="#my-projects" className="text-white">Meus projetos</Link></li>
-          </ul>
-        </nav>
+        <Navbar>
+        </Navbar>
         <div className="pt-16 grid grid-cols-2 gap-4 p-4 min-h-screen items-center">
           <div className="max-w-4xl mx-auto p-6 rounded-lg shadow-md flex flex-col justify-center items-center">
             <h1 className="text-3xl font-bold text-white mb-4 text-center">
@@ -75,7 +71,7 @@ export default function Home() {
                   Hoje no quarto período, me concentro no estudo de backend, não me limitando à tecnologias. 
                 </p>
                 <p className="pt-10 text-lg">
-                  Atualmente, estou na posição de Trainee na Haken Empresa Junior de Computação, na área de Projetos.
+                  Atualmente, estou na posição de Desenvolvedor e Gerente de Projetos na Haken Empresa Junior de Computação.
                 </p>
                 <div className="flex justify-center items-center pt-20">
                   <a href="https://www.instagram.com/hakenej/" target="_blank" rel="noopener noreferrer">
@@ -84,6 +80,7 @@ export default function Home() {
                     alt="Logo da HakenEJ"
                     width={200}
                     height={200}
+                    className="hidden sm:block"
                   >
 
                   </Image>
@@ -94,7 +91,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center pt-20">
               <h2 className="text-4xl font-bold mb-4 pb-5">Tecnologias:</h2>
-              <div className="grid grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 ">
                 <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer" title="Node.Js">
                   <FaNodeJs className="text-6xl" />
                 </a>
