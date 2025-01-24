@@ -8,6 +8,10 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
+
+  useEffect(() => {
+    document.documentElement.classList.add('dark');
+  }, []);
   const [copied, setCopied] = useState(false);
 
   const copyEmailToClipboard = () => {
