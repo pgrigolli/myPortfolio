@@ -66,9 +66,9 @@ export default function Home() {
         </div>
         <div id="about-me" className="pt-16 p-4 min-h-screen text-white">
 
-          <div className="grid grid-cols-2 gap-4 p-4 h-full">
-            <div className="flex justify-items items-center">
-              <div className="pt-15 ">
+          <div className="flex flex-col md:flex-row gap-4 p-4 h-full">
+            <div className="flex flex-col justify-center items-center md:items-start md:w-1/2">
+              <div>
                 <h2 className="text-4xl pb-5">About me</h2>
                 <p className="text-lg">
                     Graduated from Colégio Marista de Maringá, I began my studies in Computer Science at UTFPR-Campo Mourão.
@@ -77,14 +77,14 @@ export default function Home() {
                 <p className="pt-10 text-lg">
                   Currently, I am a Developer and Project Manager at Haken Junior Enterprise.
                 </p> 
-                <div className="flex justify-center items-center pt-20">
+                <div className="flex justify-center items-center pt-40">
                   <a href="https://www.instagram.com/hakenej/" target="_blank" rel="noopener noreferrer">
                   <Image
                     src="/LogotipoBranco.png"
                     alt="Logo da HakenEJ"
-                    width={200}
-                    height={200}
-                    className="hidden sm:block"
+                    width={350}
+                    height={350}
+                    className="hidden md:block"
                   >
 
                   </Image>
@@ -93,9 +93,9 @@ export default function Home() {
               </div>
 
             </div>
-            <div className="flex flex-col items-center pt-20">
+            <div className="flex flex-col items-center md:w-1/2 md:pt-80">
               <h2 className="text-4xl font-bold mb-4 pb-5">Skills:</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 ">
+              <div className="grid grid-cols-3 gap-6">
                 <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer" title="Node.Js">
                   <FaNodeJs className="text-6xl" />
                 </a>
