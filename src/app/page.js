@@ -19,7 +19,7 @@ export default function Home() {
       .then(() => {
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
-        alert("Email copiado para a área de transferência.")
+        alert("Email copied to clipboard.")
       })
       .catch(err => {
         console.error('Failed to copy: ', err);
@@ -34,10 +34,10 @@ export default function Home() {
         <div className="pt-16 grid grid-cols-2 gap-4 p-4 min-h-screen items-center">
           <div className="max-w-4xl mx-auto p-6 rounded-lg shadow-md flex flex-col justify-center items-center">
             <h1 className="text-3xl font-bold text-white mb-4 text-center">
-              Olá, eu sou <span className="text-mainBlue">Pedro Grigolli</span>
+              Hello, I am <span className="text-mainBlue">Pedro Grigolli</span>
             </h1>
             <p className="text-lg text-white mb-4 text-center">
-              Estudante de Ciência da Computação na UTFPR e aspirante a desenvolvedor
+              Computer Science student at UTFPR and aspiring programmer
             </p>
             <div className="flex space-x-4 mt-4">
               <a href="https://www.instagram.com/otaldogrigo/" target="_blank" rel="noopener noreferrer">
@@ -69,14 +69,14 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-4 p-4 h-full">
             <div className="flex justify-items items-center">
               <div className="pt-15 ">
-                <h2 className="text-4xl pb-5">Sobre mim</h2>
+                <h2 className="text-4xl pb-5">About me</h2>
                 <p className="text-lg">
-                  Graduado no Colégio Marista de Maringá, comecei meus estudos em Ciência da Computação na UTFPR-Campo Mourão. 
-                  Hoje no quarto período, me concentro no estudo de backend, não me limitando à tecnologias. 
+                    Graduated from Colégio Marista de Maringá, I began my studies in Computer Science at UTFPR-Campo Mourão.
+                  Currently in the fourth semester of my studies, I focus on studying backend development, while not limiting myself to specific technologies 
                 </p>
                 <p className="pt-10 text-lg">
-                  Atualmente, estou na posição de Desenvolvedor e Gerente de Projetos na Haken Empresa Junior de Computação.
-                </p>
+                  Currently, I am a Developer and Project Manager at Haken Junior Enterprise.
+                </p> 
                 <div className="flex justify-center items-center pt-20">
                   <a href="https://www.instagram.com/hakenej/" target="_blank" rel="noopener noreferrer">
                   <Image
@@ -94,7 +94,7 @@ export default function Home() {
 
             </div>
             <div className="flex flex-col items-center pt-20">
-              <h2 className="text-4xl font-bold mb-4 pb-5">Tecnologias:</h2>
+              <h2 className="text-4xl font-bold mb-4 pb-5">Skills:</h2>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 ">
                 <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer" title="Node.Js">
                   <FaNodeJs className="text-6xl" />
@@ -120,15 +120,15 @@ export default function Home() {
 
         </div>
         <div id="my-projects" className="pt-16 p-4 min-h-screen text-white pl-10 pr-10">
-          <h1 className="text-2xl font-bold mb-4">Meus Projetos</h1>
+          <h1 className="text-2xl font-bold mb-4">My projects</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
             <a href="https://github.com/CountBoxess" target="_blank" rel="noopener noreferrer" className="block">
               <div className="bg-mainBlue border border-blue-600 rounded-lg h-80 shadow-lg flex flex-col justify-start p-6">
                 <h3 className="text-xl font-semibold">CountBoxes</h3>
-                <p className="mt-2">Uma aplicação para contar e gerenciar caixas durante o carregamento e descarregamento de produtos.</p>
+                <p className="mt-2">An application to count and manage boxes during the loading and unloading of products.</p>
                 <Image
                 src={"/CountBoxesLogoRetangular.jpeg"}
-                alt="Logo do Countboxes"
+                alt="CountBoxes logo"
                 width={400}
                 height={150}
                 className="mx-auto border-4 border-black border-w rounded-lg mt-4"
@@ -136,8 +136,8 @@ export default function Home() {
               </div>
             </a>
             <div className="bg-gray-700 border border-gray-600 rounded-lg h-80 p-6 shadow-lg flex flex-col justify-start">
-              <h3 className="text-xl font-semibold">Projetos em Desenvolvimento</h3>
-              <p className="mt-2">Outros projetos em desevolvimento.</p>
+              <h3 className="text-xl font-semibold">Working on other projects</h3>
+              <p className="mt-2">Developing other projects</p>
             </div>
           </div>
         </div>

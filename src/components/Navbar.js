@@ -32,12 +32,12 @@ export default function Navbar() {
         </li>
         <li>
           <Link href="#about-me" className="hover:text-gray-300">
-            Sobre mim
+            About me
           </Link>
         </li>
         <li>
           <Link href="#my-projects" className="hover:text-gray-300">
-            Meus projetos
+            My projects
           </Link>
         </li>
       </ul>
