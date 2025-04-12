@@ -75,20 +75,9 @@ export default function Home() {
                   Currently in the fourth semester of my studies, I focus on studying backend development, while not limiting myself to specific technologies 
                 </p>
                 <p className="pt-10 text-lg">
-                  Currently, I am a Developer and Project Manager at Haken Junior Enterprise.
+                  Currently, I am an software development intern at COAMO Agroindustrial Cooperative.
                 </p> 
                 <div className="flex justify-center items-center pt-40">
-                  <a href="https://www.instagram.com/hakenej/" target="_blank" rel="noopener noreferrer">
-                  <Image
-                    src="/LogotipoBranco.png"
-                    alt="Logo da HakenEJ"
-                    width={350}
-                    height={350}
-                    className="hidden md:block"
-                  >
-
-                  </Image>
-                  </a>
                 </div>
               </div>
 
@@ -125,7 +114,7 @@ export default function Home() {
             <a href="https://github.com/CountBoxess" target="_blank" rel="noopener noreferrer" className="block">
               <div className="bg-mainBlue border border-blue-600 rounded-lg h-80 shadow-lg flex flex-col justify-start p-6">
                 <h3 className="text-xl font-semibold">CountBoxes</h3>
-                <p className="mt-2">An application to count and manage boxes during the loading and unloading of products.</p>
+                <p className="mt-2">An application to count and manage boxes during the loading and unloading of trucks.</p>
                 <Image
                 src={"/CountBoxesLogoRetangular.jpeg"}
                 alt="CountBoxes logo"
@@ -135,10 +124,19 @@ export default function Home() {
                 ></Image>
               </div>
             </a>
-            <div className="bg-gray-700 border border-gray-600 rounded-lg h-80 p-6 shadow-lg flex flex-col justify-start">
-              <h3 className="text-xl font-semibold">Working on other projects</h3>
-              <p className="mt-2">Developing other projects</p>
-            </div>
+            <a href="https://github.com/joaoPAndrade/agenda-de-tarefas-back" target="_blank" rel="noopener noreferrer" className="block">
+              <div className="bg-mainBlue border border-blue-600 rounded-lg h-80 shadow-lg flex flex-col justify-start p-6">
+                <h3 className="text-xl font-semibold">Pomo task schedular app</h3>
+                <p className="mt-2">A mobile application to manage and share tasks between members of your group.</p>
+                <Image
+                src={"/PomoAppLogo.png"}
+                alt="CountBoxes logo"
+                width={200}
+                height={150}
+                className="mx-auto border-4 border-black border-w rounded-lg mt-4"
+                ></Image>
+              </div>
+            </a>
           </div>
         </div>
 

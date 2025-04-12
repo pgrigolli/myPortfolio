@@ -3,15 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0a0a; /* Cor de fundo do modo escuro */
+  --foreground: #ededed; /* Cor do texto do modo escuro */
 }
 
 body {
@@ -25,4 +18,3 @@ body {
     text-wrap: balance;
   }
 }
-
